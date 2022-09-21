@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+  <title>Document</title>
+</head>
+
+<body>
+  <header id="cabezal">
+    <nav class="navbar navbar-expand-lg">
+      <img src="img/codoacodo.png" alt="">
+      <a class="navbar-brand text-light" href="#">Conf Bs As</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">La Conferencia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Los Oradores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">El Lugar y la Fecha</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Conviertete en Orador</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="compraticket" href="#">Comprar tickets</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
+  <section id="hero">
+    <div class="container-fluid">
+      <div>
+
+      </div>
+      <div class="parrafo d-flex flex-column  me-sm-5 justify-content-center text-light align-items-sm-center  align-items-md-end">
+        <h3>Conf Bs As</h3>
+        <p>Bs As llega por primera vez a Argentina. Un evento para compartir con</p>
+        <p>nuestra comunidad el conocimiento y experiencia de los expertos que</p>
+        <p>estan creando el futuro de la Internet. Ven a conocer a miembros del</p>
+        <p>evento, a otros estudiantes de Codo a Codo y los oradores de</p>
+        <p>primer nivel que tenemos para ti. Te esperamos!!</p>
+        <div class="botones">
+          <button id="boton1">Quiero ser Orador</button>
+          <button id="boton2">Comprar tickets</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <section id="oradores">
+    <p>CONOCE A LOS</p>
+    <H3>ORADORES</H3>
+    <div id="tarjetas" class="d-flex flex-column  flex-md-row  justify-content-around">
+      <div class="card my-sm-1 mx-2" style="width: 18rem;">
+        <img class="card-img-top" src="img/steve.jpg" alt="Card image cap">
+        <div class="card-body">
+          <div class="botones m-0">
+            <button class="btn bg-warning btn-sm font-weight-bold">JavaScritp</button>
+            <button class="btn bg-info text-light btn-sm">React</button>
+          </div>
+          <h5 class="card-title">Steve Jobs</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          
+        </div>
+      </div>
+      <div class="card my-sm-1 mx-2" style="width: 18rem;">
+        <img class="card-img-top" src="img/bill.jpg" alt="Card image cap">
+        <div class="card-body">
+          <div class="botones m-0">
+            <button class="btn bg-warning btn-sm">JavaScritp</button>
+            <button class="btn bg-info text-light btn-sm">React</button>
+          </div>
+          <h5 class="card-title">Bill Gates</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          
+        </div>
+      </div>
+      <div class="card my-sm-1 mx-2" style="width: 18rem;">
+        <img class="card-img-top" src="img/ada.jpeg" alt="Card image cap">
+        <div class="card-body">
+          <div class="botones m-0">
+            <button class="btn bg-warning btn-sm">JavaScritp</button>
+            <button class="btn bg-info text-light btn-sm">React</button>
+          </div>
+          <h5 class="card-title">Ada Lovelace</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section id="bsas">
+   <div class="container-fluid ">
+     <div class="row"> 
+      <div class="playa d-none d-sm-block col-xs-12 col-sm-6 pt-3">
+          <h1 class="d-none">esta es una playa</h1>
+      </div>
+     <div class="descripcion col-12 col-sm-6 pb-3">
+          <h3 class="text-light pt-3 fw-semibold">Bs As - Octubre</h3>
+          <p class="text-light">Buenos Aires es ciudad y la localidad mas grande del estado de Argentina, en los Estados
+            Unidos, Honolulu es la mas sureña de entre las principales ciudades estadounidenses.
+            Aunque el nombre Honolulu se refiere al area urbana en la costa suresta de la isla de Oahu,
+            la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda
+            la ciudad (aproximadamente 600 km<sup>2</sup> de superficie).
+          </p>
+          <button class="btn btn-outline-light">Conoce mas</button>
+     </div> 
+    </div>
+
+   </div> 
+  </section>
+
+  <section class="container-fluid" id="inscripcion">
+  
+    <h3 class="d-flex justify-content-center mt-2">Orador</h3>
+    <p class="d-flex justify-content-center">Anotate como orador para una charla ignite. Cuentanos de que quieres hablar!
+    </p>
+    <div class="row">
+      <div class="col-1 d-sm-block col-sm-2"></div>
+      <input type="text" class="col-10  col-sm-4  " placeholder="Nombre">
+      <div class=" d-sm-block col-1"></div>
+      <div class="col-1 d-sm-none col-sm-2"></div>
+      <input type="text" class="col-10  col-sm-4  mt-2 m-sm-0" placeholder="Apellido">
+      <div class="col-1 d-sm-block col-sm-2"></div>
+  
+    </div>
+    <div class="row mt-3">
+      <div class="col-1 col-sm-2"></div>
+      <textarea class="col-10 col-sm-9" name="" id="" cols="20" rows="5" placeholder="Dinos de que quieres hablar"></textarea>
+      <div class="col-1 col-sm-1"></div>
+    
+    </div>
+    
+    <div class="row">
+    <p class="d-flex justify-content-center">Recuerda incluir un titulo para la charla</p>
+  </div>
+    <div class="row mx-2 justify-content-center">
+      <input type="submit" value="Enviar" class="btn btn-success btn-lg col-8">  
+    </div>
+    
+  
+ 
+  
+  
+  </section>
+
+  <footer id="pie" class="d-flex flex-column flex-sm-row justify-content-evenly align-items-center">
+    <a href="">Preguntas Frecuentes</a>
+    <a href="">Contactanos</a>
+    <a href="">Prensa</a>
+    <a href="">Conferencia</a>
+    <a href="">Terminos y Condiciones</a> 
+    <a href="">Privacidad</a>
+    <a href="">Estudiantes</a>
+  
+  </footer>
+
+</body>
+
+</html>

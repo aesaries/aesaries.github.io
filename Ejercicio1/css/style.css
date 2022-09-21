@@ -1,0 +1,132 @@
+
+#cabezal .navbar{
+    background-color: rgb(39, 37, 37);
+}
+
+
+
+header nav img{
+    max-width: 9rem;
+}
+
+.navbar-right{
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+
+}
+
+#navbarNav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    
+
+}
+
+a.nav-link{
+    
+    border: 0;
+    font-size: medium;
+    font-weight: bold;
+    padding-left: 0px;
+    padding-right: 20px;
+    color: rgb(234, 241, 241);
+    text-align: right;
+      
+}
+
+a.nav-link:hover{
+    color: aqua;
+}
+a#compraticket {
+    color: green;
+}
+
+#hero{
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+#hero .container-fluid{
+    display: flex;
+    height: 150vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/ba1.jpg");
+    background-repeat : no-repeat;
+    background-size : cover;
+    border: 1px solid darkblue;
+    justify-content: flex-end;
+    
+    
+    
+}
+
+#hero .container-fluid .parrafo p{
+    margin: 0px;
+}
+/* 
+#hero .container-fluid .parrafo{
+    
+    display: flex;
+    color:aliceblue;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+} */
+
+.botones{
+    margin-top: 2rem;
+}
+
+#boton1{
+    font-size: small;
+    background-color: transparent;
+    color: aliceblue;
+    height: 2rem;
+    width: 9rem;
+    border: 1px solid white;    
+    
+}
+#boton2{
+    margin-left: 2rem;
+    background-color: green;
+    color: aliceblue;
+    height: 2rem;
+    width: 9rem;
+    border: 0px;
+}
+
+
+#oradores{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#oradores #tarjetas{
+    width: 75vw;
+}
+
+#bsas .playa{
+    background-image: url(../img/honolulu.jpg);
+    /* height: 70vh; */
+    background-repeat : no-repeat;
+    background-size: cover;
+}
+
+#bsas .descripcion{
+
+    background-color: rgb(61, 60, 60);
+}
+
+footer{
+    background-color: rgb(40, 40, 112);
+    height: 8rem;
+    color: aliceblue;
+}
+
+#pie a{
+    color: aliceblue;
+    text-decoration: none;
+}
