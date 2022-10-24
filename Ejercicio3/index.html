@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ejercicio2</title>
+    <!-- Tercera  actividad obligatoria - autor Enzo Valverde -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <!----------------------------------- barra de navegacion  -->
+    <header id="cabezal">
+    
+      <nav class="navbar navbar-expand-lg">
+        <img src="img/codoacodo.png" alt="">
+        <a class="navbar-brand text-light" href="#">Conf Bs As</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#hero">La Conferencia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#oradores">Los Oradores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#bsas">El Lugar y la Fecha</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#inscripcion">Conviertete en Orador</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="compraticket" href="#">Comprar tickets</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    
+    </header>
+  
+
+
+
+
+    <!--------------------------------------- Seccion de Tarjetas -->
+    <div class="container">
+      <section  class="container-fluid d-flex justify-content-center mt-3"   id="tarjetas">
+
+        <div class="card me-2" style="width: 22rem;">
+            
+            <div class="card-body align-items-center">
+              <h3 class="text-center">Estudiante</h3>
+              <h5 class="text-center">Tienen un descuento</h4>
+              <h4 class="text-center">80%</h4>
+              <p class="text-center  text-secondary">*presentar documentacion</p>
+            </div>
+        </div>
+          
+        <div class="card mx-2" style="width: 22rem;">
+          <div class="card-body align-items-center">
+            <h3 class="text-center">Trainee</h3>
+            <h5 class="text-center">Tienen un descuento</h4>
+            <h4 class="text-center">50%</h4>
+            <p class="text-center  text-secondary">*presentar documentacion</p>
+          </div>
+        </div>
+
+        <div class="card mx-2" style="width: 22rem; ">
+          <div class="card-body align-items-center">
+            <h3 class="text-center">Junior</h3>
+            <h5 class="text-center">Tienen un descuento</h4>
+            <h4 class="text-center">15%</h4>
+            <p class="text-center  text-secondary">*presentar documentacion</p>
+          </div>
+        </div>
+
+
+      </section>
+    </div>
+
+      <!------------------------------------------------ Formulario -->
+      <Section class="container my-4" id="formulario">
+        <div class="mb-3">
+          <p class="text-center">Venta</p>
+          <h3 class="text-center">Valor del ticket $200</h3>
+
+          <div class="d-flex  flex-column flex-md-row justify-content-around">
+            <input id="input-nombre" class="rounded inputbox col-12 col-md-4" type="text" size="60rem" placeholder="NOMBRE" style="height:3rem">
+            <input id="input-apellido" class="rounded inputbox col-12 col-md-4" type="text" size="60rem" placeholder="APELLIDO">
+          </div>
+
+          <div class="d-flex row-cols-1 justify-content-center  mt-4">
+            <input id="input-correo" class="rounded inputbox col-12 col-md-10" type="email" placeholder="CORREO" size="155rem" style="height:3rem">
+          </div>
+
+          <div class="d-flex flex-column flex-md-row justify-content-around mt-4">
+            <div class="d-flex flex-column col-12 col-md-4">
+              <label for="boxcantidad">CANTIDAD</label>
+              <input id="input-cantidad" class="rounded inputbox " type="number" min="1" max="20" id="boxcantidad" size="60rem" placeholder="CANTIDAD" style="height:3rem">
+            </div>
+
+            <div class="d-flex flex-column col-12 col-md-4">
+              <label for="boxcategoria">CATEGORIA</label>
+              <!-- <input class="rounded" type="" id="boxcategoria" size="60rem" placeholder="CATEGORIA" style="height:3rem"> -->
+              <select id="input-categoria"  name="Categorias" size="1" placeholder="CATEGORIA" style="height:3rem; width: 28rem; font-size:larger;">
+
+                <option>Estudiante</option>
+                
+                <option>Trainee</option>
+                
+                <option>Junior</option>
+                
+                </select>
+              
+
+            </div>
+          </div>
+
+          <div class="d-flex row-cols-1 justify-content-center mt-4">
+            <input id="total-pagar" class="rounded text-end col-12 col-md-10 " type="email" placeholder="Total a Pagar $:" size="158rem"
+             style="height:3rem; background-color: rgb(170, 211, 212);color: blue;">
+          </div>
+
+          <div id="botones" class="d-flex flex-column flex-md-row justify-content-evenly mt-4">
+            <!-- <button class="btn btn-primary btn-lg">Borrar</button>
+            <button class="btn btn-primary btn-lg">Calcular</button> -->
+            <button class="btnverde" id="btnBorrar">Borrar</button>
+            <button class="btnverde" id="btnCalcular">Calcular</button>
+          </div>
+
+          </div>
+         
+      </Section>
+
+
+      <footer id="pie" class="d-flex flex-column flex-sm-row justify-content-evenly align-items-center">
+        <a href="">Preguntas Frecuentes</a>
+        <a href="">Contactanos</a>
+        <a href="">Prensa</a>
+        <a href="">Conferencia</a>
+        <a href="">Terminos y Condiciones</a> 
+        <a href="">Privacidad</a>
+        <a href="">Estudiantes</a>
+      
+      </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script  src="/js/script.js"></script>
+  </body>
+  
+</html>
